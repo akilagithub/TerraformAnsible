@@ -165,7 +165,7 @@ depends_on = [aws_instance.instance1]
   provisioner "local-exec" {
 
     working_dir = "./ansible_code"
-    command = "ansible-playbook -vD newplaybook.yml"
+    command = "ansible-playbook -vD newplaybook.yaml"
   }
 }
 

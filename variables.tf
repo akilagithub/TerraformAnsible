@@ -3,7 +3,7 @@
 
 variable "private_key_path"{
   type = string
-  default = "terraform.pem"
+  default = "./terraform.pem"
 }  
 
 variable "ssh_user"{
@@ -17,7 +17,8 @@ variable "key_name"{
   default = "terraform" 
 }
 
-variable "region" {                                                                                                                                                                             type    = string
+variable "region" {            
+  type    = string
   default = "eu-west-1"
   description = "Name of the region to create resource"
 }
